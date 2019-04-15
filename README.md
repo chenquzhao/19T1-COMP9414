@@ -1,5 +1,5 @@
 # COMP9414
-Artificial Intelligence
+Artificial Intelligence 19 T1
 
 Personal assignments and document record for COMP9414.
 
