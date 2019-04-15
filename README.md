@@ -1,7 +1,7 @@
 # COMP9414
 Artificial Intelligence 19 T1
 
-Personal assignments and document record for COMP9414.
+Personal assignments and lecture slides collection for COMP9414, always updated a period after due date.
 
 Assignment 1: Prolog programming
 
