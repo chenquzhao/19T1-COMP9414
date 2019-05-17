@@ -1,0 +1,22 @@
+The failed test case worthed 0.4 mark appears in question 1. 
+Original code for question 1 is below:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Question1
+%sumsq_even(Numbers, Sum) - sums the squares of only the even numbers in a list of integers
+
+sumsq_even([], 0).
+sumsq_even([Head|Tail], Sum) :- sumsq_even(Tail, Sum_now), 0 is Head mod 2, Sum is Head ^ 2 + Sum_now.
+sumsq_even([Head|Tail], Sum) :- sumsq_even(Tail, Sum_now), 1 is Head mod 2, Sum is Sum_now.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To avoid exponential slowdown, need to swap the last two clauses. Otherwise the program may run overtime when dealing with complex input.
+
+Corrected code:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Question1
+%sumsq_even(Numbers, Sum) - sums the squares of only the even numbers in a list of integers
+
+sumsq_even([], 0).
+sumsq_even([Head|Tail], Sum) :- sumsq_even(Tail, Sum_now), 1 is Head mod 2, Sum is Sum_now.
+sumsq_even([Head|Tail], Sum) :- sumsq_even(Tail, Sum_now), 0 is Head mod 2, Sum is Head ^ 2 + Sum_now.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
