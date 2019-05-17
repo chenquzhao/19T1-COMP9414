@@ -7,4 +7,4 @@ Assignment 1: Prolog programming 11.6/12
 
 Assignment 2: Heuristics & Search 12/12
 
-Assignment 3: Nine-Board Tic-Tac-Toe ?/16
+Assignment 3: Nine-Board Tic-Tac-Toe 12.7/16
